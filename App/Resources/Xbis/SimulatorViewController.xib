@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimulatorViewController" customModule="App" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="Iyw-2a-XFq" id="lcV-BN-O4j"/>
+                <outlet property="buttonSimulate" destination="AIF-D6-ZTZ" id="VDr-aT-Qje"/>
+                <outlet property="textFieldDueDate" destination="uCd-xu-9Mb" id="vA3-OB-xO4"/>
+                <outlet property="textFieldPercentage" destination="VwK-W1-Tyz" id="jaL-gp-Bru"/>
+                <outlet property="textFieldValueApplied" destination="CEO-Ya-cPA" id="ULr-6a-gRI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBackgroundIndicator" destination="afs-6j-irz" id="EVs-Yd-gCF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quanto você gostaria de aplicar?*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTZ-gN-FBQ">
+                    <rect key="frame" x="16" y="168" width="382" height="19.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a data de vencimento do investimento?*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5O-9t-Xrw">
+                    <rect key="frame" x="16" y="348" width="382" height="19.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual o percentual do CDI do investimento?*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6R8-mW-i3w">
+                    <rect key="frame" x="16" y="524.5" width="382" height="20"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="R$" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CEO-Ya-cPA">
+                    <rect key="frame" x="16" y="195.5" width="382" height="50.5"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dia/mês/ano" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCd-xu-9Mb">
+                    <rect key="frame" x="16" y="375.5" width="382" height="50.5"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VwK-W1-Tyz">
+                    <rect key="frame" x="16" y="552.5" width="382" height="50.5"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIF-D6-ZTZ">
+                    <rect key="frame" x="16" y="796" width="382" height="50"/>
+                    <color key="backgroundColor" red="0.76470588235294112" green="0.792156862745098" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6dG-wZ-BC5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Simular"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="26"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="showResult:" destination="-1" eventType="touchUpInside" id="ziS-em-12V"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afs-6j-irz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Iyw-2a-XFq">
+                            <rect key="frame" x="188.5" y="390.5" width="37" height="37"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Iyw-2a-XFq" firstAttribute="centerY" secondItem="afs-6j-irz" secondAttribute="centerY" constant="-39" id="eF5-P5-oP9"/>
+                        <constraint firstItem="Iyw-2a-XFq" firstAttribute="centerX" secondItem="afs-6j-irz" secondAttribute="centerX" id="qox-bf-hSU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="CEO-Ya-cPA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.49" constant="1" id="5uN-FC-EdC"/>
+                <constraint firstItem="YTZ-gN-FBQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6cP-2R-VHO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="z5O-9t-Xrw" secondAttribute="trailing" constant="16" id="9aB-nY-CmT"/>
+                <constraint firstItem="VwK-W1-Tyz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.29" id="A0H-WL-S6u"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YTZ-gN-FBQ" secondAttribute="trailing" constant="16" id="DHw-sN-3hy"/>
+                <constraint firstItem="AIF-D6-ZTZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="FQ1-HC-V7R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AIF-D6-ZTZ" secondAttribute="bottom" constant="16" id="K9Z-3D-sGe"/>
+                <constraint firstItem="6R8-mW-i3w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="OQx-NU-7xM"/>
+                <constraint firstItem="uCd-xu-9Mb" firstAttribute="top" secondItem="z5O-9t-Xrw" secondAttribute="bottom" constant="8" id="PW6-bN-CyH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6R8-mW-i3w" secondAttribute="trailing" constant="16" id="Pgj-X0-Kkr"/>
+                <constraint firstItem="afs-6j-irz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qy1-IW-ds5"/>
+                <constraint firstItem="CEO-Ya-cPA" firstAttribute="top" secondItem="YTZ-gN-FBQ" secondAttribute="bottom" constant="8" id="YgC-6g-gc3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CEO-Ya-cPA" secondAttribute="trailing" constant="16" id="aAH-ab-Qzq"/>
+                <constraint firstItem="afs-6j-irz" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="dGc-yN-hIl"/>
+                <constraint firstItem="CEO-Ya-cPA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="gBd-ua-ZJu"/>
+                <constraint firstItem="uCd-xu-9Mb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hm8-Jk-F8p"/>
+                <constraint firstItem="afs-6j-irz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ith-Pj-Pp7"/>
+                <constraint firstItem="uCd-xu-9Mb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.895" id="j1h-be-htz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AIF-D6-ZTZ" secondAttribute="trailing" constant="16" id="jym-FW-oVq"/>
+                <constraint firstItem="z5O-9t-Xrw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="oVt-0C-Q4l"/>
+                <constraint firstItem="afs-6j-irz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="odG-cR-SHG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VwK-W1-Tyz" secondAttribute="trailing" constant="16" id="rua-48-9Nl"/>
+                <constraint firstItem="VwK-W1-Tyz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="swf-lF-Xkv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uCd-xu-9Mb" secondAttribute="trailing" constant="16" id="wsI-FD-shC"/>
+                <constraint firstItem="VwK-W1-Tyz" firstAttribute="top" secondItem="6R8-mW-i3w" secondAttribute="bottom" constant="8" id="xe2-bE-5FP"/>
+            </constraints>
+            <point key="canvasLocation" x="-197.10144927536234" y="-7.3660714285714279"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
